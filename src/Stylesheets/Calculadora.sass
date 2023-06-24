@@ -1,0 +1,51 @@
+.background
+    height: 100vh
+    background: grey
+    display: flex
+
+.calculadora
+    margin: auto
+    background: #2c2c2c
+    width: 300px
+    padding: 10px
+    border: 1px solid black
+    border-radius: 10px
+
+    .display
+        background: lightgrey
+        text-align: right
+        border-radius: 10px
+        margin: 10px 0px 35px
+
+        #valor-anterior,
+        #valor-actual
+            padding: 3px
+            margin-right: 5px
+            height: 25px
+        #valor-anterior
+            font-size: 25px
+
+    
+    .botones
+        //El width y el margin deben sumar 300 (el width de .calculadora)
+        button
+            width: 69px
+            height: 45px
+            margin-bottom: 10px
+            border: none
+            border-radius: 10px
+            transition: 1s
+        button:hover
+            background: lightgrey
+        button.doble
+            width: 146px //69 + 69 + 8 (el margin) = botton doble
+        button.margin
+            margin-right: 8px
+        button.borrarTodo
+            background: #C0392B
+        button.borrarTodo:hover
+            background: #A93226
+        button.operadorBg
+            background: #6BA2D1
+        button.operadorBg:hover
+            background: #5598be
